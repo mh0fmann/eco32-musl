@@ -691,6 +691,12 @@ SUBARCH=${SUBARCH}-fdpic
 fi
 fi
 
+if test "$ARCH" = "eco32" ; then
+if test ! "x$shared" = xno ; then
+fail "eco32 does not support shared libraries. use --disable-shared"
+fi
+fi
+
 test "$SUBARCH" \
 && printf "configured for %s variant: %s\n" "$ARCH" "$ARCH$SUBARCH"
 
