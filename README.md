@@ -10,7 +10,7 @@ project), don't hesitate to contact me by email to
 
 Martin.Hofman@mni.thm.de
 
-or join #eco32-linux on irq.quakenet.org
+or join #eco32-linux on irc.quakenet.org
 
 ## ECO32
 ECO32 is a simple, fast 32-bit processor that runs C code, currently
