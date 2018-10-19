@@ -5,9 +5,9 @@
 
 static inline struct pthread* __pthread_self()
 {
-	register char* r27 __asm__("$27");
-	__asm__ __volatile__ ("" : "=r"(r27));
-	return (struct pthread*)(r27 - sizeof(struct pthread));
+    register char* r27 __asm__("$27");
+    __asm__ __volatile__ ("" : "=r"(r27));
+    return (struct pthread*)(r27 - sizeof(struct pthread));
 }
 
 #define TLS_ABOVE_TP

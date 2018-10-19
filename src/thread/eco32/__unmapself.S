@@ -1,16 +1,11 @@
-/*
- * call munmap to unmap the thread and call exit to end it
- * without touching the stack
- */
-
 #include <bits/syscall.h.in>
 
 .global __unmapself
 
-//void __unmapself(void *base, size_t size);
+// void __unmapself(void *base, size_t size)
 __unmapself:
-	addi $2,$0,__NR_munmap
-	trap
-	addi $2,$0,__NR_exit
-	addi $4,$0,0
-	trap
+    addi    $2,$0,__NR_munmap
+    trap
+    addi    $2,$0,__NR_exit
+    addi    $4,$0,0
+    trap

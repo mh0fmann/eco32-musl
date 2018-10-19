@@ -1,7 +1,7 @@
 .global sigsetjmp
 .global __sigsetjmp
 
-//in sigsetjmp(sigjmp_buf env, int savemask)
+// int sigsetjmp(sigjmp_buf env, int savemask)
 __sigsetjmp:
 sigsetjmp:
     beq     $5,$0,1f
