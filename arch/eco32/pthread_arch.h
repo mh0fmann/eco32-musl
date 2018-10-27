@@ -10,5 +10,6 @@ static inline struct pthread* __pthread_self()
     return (struct pthread*)(r27 - sizeof(struct pthread));
 }
 
+#define GAP_ABOVE_TP 0
 #define TLS_ABOVE_TP
 #define TP_ADJ(p) ((char*)(p) + sizeof(struct pthread))
