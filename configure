@@ -703,7 +703,7 @@ fi
 
 if test "$ARCH" = "eco32" ; then
 if test ! "x$shared" = xno ; then
-fail "eco32 does not support shared libraries. use --disable-shared"
+fail "shared libraries are not supported for eco32. use --disable-shared"
 fi
 fi
 
